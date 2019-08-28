@@ -47,5 +47,27 @@ namespace _00_HelloWorld
             // 这个是用来给属性赋值的(间接地来给字段进行赋值)
             this.Num1 = num1;
         }
+
+        /// <summary>
+        /// 测试函数用来计算两个数的数值
+        /// </summary>
+        /// <param name="a">第一个参数</param>
+        /// <param name="b">第二个参数</param>
+        /// <returns>返回值是整数类型</returns>
+        public int Test_Func(int a, int b) {
+            // return 就是用来跳出函数,或者是说用来结束函数的
+            return a + b;
+        }
+
+        /// <summary>
+        /// 测试函数用来计算两个数的值
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="res"></param>
+        public void Test_Func(int a, int b ,out int res) {
+            // 使用out 修饰函数参数的时候,需要放在最后,并且要在函数内部进行赋值,否则会报错
+            res = a + b;
+        }
     }
 }

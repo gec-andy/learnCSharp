@@ -79,46 +79,46 @@ namespace _00_HelloWorld
             // new 关键字 就是表示创建的意思
             // 就是创建一个结构体类型的数据(对象)
             // 结构体类型 标识符 = new 结构体类型();
-            MyStruct tmpStruct = new MyStruct();
-            tmpStruct.INum = 2;
-            //  double d
-            // float f
-            // int 类型不需要修饰,直接定义使用就可以了
-            tmpStruct.FNum = 3.333f;
-            int tmpNum1 = tmpStruct.INum;
-            float tmpNum2 = tmpStruct.FNum;
+            //MyStruct tmpStruct = new MyStruct();
+            //tmpStruct.INum = 2;
+            ////  double d
+            //// float f
+            //// int 类型不需要修饰,直接定义使用就可以了
+            //tmpStruct.FNum = 3.333f;
+            //int tmpNum1 = tmpStruct.INum;
+            //float tmpNum2 = tmpStruct.FNum;
 
-            // + - * /
-            //  数据类型转换这个概念
-            //  在程序世界中 有大数据 有小数据
-            //  一种大数据转换成小数据  强制类型转换
-            //  另一种是小数据转换成大数据 隐式类型转换
-            //  就好比有两个盒子 这两个盒子 就是存放不同类型的数据,存放数据的容量也不一样
-            //  大盒子 就是存放的东西会多一些, 小盒子就是存放的东西会少一些
-            //  int -> float
+            //// + - * /
+            ////  数据类型转换这个概念
+            ////  在程序世界中 有大数据 有小数据
+            ////  一种大数据转换成小数据  强制类型转换
+            ////  另一种是小数据转换成大数据 隐式类型转换
+            ////  就好比有两个盒子 这两个盒子 就是存放不同类型的数据,存放数据的容量也不一样
+            ////  大盒子 就是存放的东西会多一些, 小盒子就是存放的东西会少一些
+            ////  int -> float
 
-            // 需要做一个强制转换的操作
-            // 第一种强制转换数据类型的方法
-            //  直接在要进行转换的变量前边加上括号,括号内就是要转换的数据类型
-            Console.WriteLine(tmpNum2);
-            //  在转换成整数类型的时候 就会存在精度的丢失问题
-            //   这个精度丢失的问题就是指的是 大数据在转换成小数据的时候,可能会出现
-            //  就比如小数类型 转换成 整数类型,就会出现小数点后几位的精度丢失
-            int result = (int)tmpNum2;
-            Console.WriteLine(result);
-            //int result = tmpNum1 + tmpNum2;
-            //同数据类型的变量  直接可以转换 而不需要类型转换
-            float f = tmpStruct.FNum;
+            //// 需要做一个强制转换的操作
+            //// 第一种强制转换数据类型的方法
+            ////  直接在要进行转换的变量前边加上括号,括号内就是要转换的数据类型
+            //Console.WriteLine(tmpNum2);
+            ////  在转换成整数类型的时候 就会存在精度的丢失问题
+            ////   这个精度丢失的问题就是指的是 大数据在转换成小数据的时候,可能会出现
+            ////  就比如小数类型 转换成 整数类型,就会出现小数点后几位的精度丢失
+            //int result = (int)tmpNum2;
+            //Console.WriteLine(result);
+            ////int result = tmpNum1 + tmpNum2;
+            ////同数据类型的变量  直接可以转换 而不需要类型转换
+            //float f = tmpStruct.FNum;
 
-            //  小数据类型转换成大数据类型 直接可以转换,而不需要做类型转换操作
-            float f1 = tmpStruct.INum;
+            ////  小数据类型转换成大数据类型 直接可以转换,而不需要做类型转换操作
+            //float f1 = tmpStruct.INum;
 
-            // + - * /
+            //// + - * /
 
-            int sum = 10 + 5;
-            int reduceResult = 10 - 5;
-            int multiResult = 10 * 5;
-            int chuResult = 10 / 5;
+            //int sum = 10 + 5;
+            //int reduceResult = 10 - 5;
+            //int multiResult = 10 * 5;
+            //int chuResult = 10 / 5;
             // 使用对应格式输出数据
             // 0 sum
             // 1 reduceResult
@@ -128,7 +128,7 @@ namespace _00_HelloWorld
             // 就好比一个一个的萝卜坑
             //  一个坑就是对应一个萝卜
             //  每个坑必须要有一个萝卜
-            Console.WriteLine("Sum:{0},Reduce:{1},Multi:{2},Chu:{3}", sum, reduceResult, multiResult, chuResult);
+           // Console.WriteLine("Sum:{0},Reduce:{1},Multi:{2},Chu:{3}", sum, reduceResult, multiResult, chuResult);
 
             #region 输出自定义的结构体中的数据
             ////Console.WriteLine(tmpNum1);
@@ -155,24 +155,35 @@ namespace _00_HelloWorld
             //Console.Write("输出数据,不进行换行");
 
             #region 实例化自己所声明定义的类
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("获取当前系统时间: " + DateTime.Now + " ");
-            // 创建一个自定义的类型,并实例化出一个对象到内存中
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~");
+            //Console.WriteLine("获取当前系统时间: " + DateTime.Now + " ");
+            //// 创建一个自定义的类型,并实例化出一个对象到内存中
             MyClass_01 myClass_01 = new MyClass_01();
-            // 为属性进行赋值
-            myClass_01.Num1 = 10;
-            // 使用属性获取数据
-            // 并输出到控制台上
-            Console.WriteLine(myClass_01.Num1);
-            // 为这个 myClass_01 这个对象中的变量 num2 进行赋值
-            myClass_01.num2 = 100;
-            // 通过获取变量 num2 进行数据的输出打印
-            Console.WriteLine("通过使用变量名称来获取的数据:" + myClass_01.num2);
-            // 通过方法为属性设置数据(赋值)
-            myClass_01.setNum1(20);
-            Console.WriteLine("通过调用方法获取的数据:" + myClass_01.getNum1());
-            Console.WriteLine("通过调用属性获取的数据:" + myClass_01.Num1);
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~");
+            // 声明定义并初始化 4个值类型
+            int a = 10, b = 22, result1 = 0, result2 = 0;
+            // 调用自己定义的函数 求两个数的值(是接收的返回值)
+            result1 = myClass_01.Test_Func(a, b);
+           // 调用自己定义的函数 求两个数的值(是不接收返回值,使用out 修饰的参数)
+           // 这是一个重载函数,重载函数和返回值没有关系,无关
+            myClass_01.Test_Func(a, b, out result2);
+            Console.WriteLine("不使用out修饰的参数,而是接收的函数的返回值,a+b=" + result1);
+            Console.WriteLine("使用out修饰的参数,不是接收的函数的返回值,a+b=" + result2);
+            #region 通过属性操作变量 和 通过方法操作属性
+            //// 为属性进行赋值
+            //myClass_01.Num1 = 10;
+            //// 使用属性获取数据
+            //// 并输出到控制台上
+            //Console.WriteLine(myClass_01.Num1);
+            //// 为这个 myClass_01 这个对象中的变量 num2 进行赋值
+            //myClass_01.num2 = 100;
+            //// 通过获取变量 num2 进行数据的输出打印
+            //Console.WriteLine("通过使用变量名称来获取的数据:" + myClass_01.num2);
+            //// 通过方法为属性设置数据(赋值)
+            //myClass_01.setNum1(20);
+            //Console.WriteLine("通过调用方法获取的数据:" + myClass_01.getNum1());
+            //Console.WriteLine("通过调用属性获取的数据:" + myClass_01.Num1);
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~"); 
+            #endregion
             #endregion
 
             //Console.Write("这个可以换行\r\n");
